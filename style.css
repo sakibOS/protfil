@@ -1,6 +1,6 @@
 body{
     font-family: 'Open Sans', sans-serif;
-    font-family: 'lato',sans-serif;
+    /*font-family: 'lato',sans-serif;*/
 }
 nav{
     display: flex;
@@ -73,11 +73,18 @@ margin-top: 5px;
 }
 /*main section style*/
 /*about section style*/
+main{
+    max-width: 1140px;
+    margin: 0 auto;
+}
+main>section{
+    margin-top: 130px;
+}
 .about{
-    padding: 130px 157px;
+    padding:100px  157px;
 border-radius: 10px;
 background: #FFF8F3;
-margin: 130px 230px;
+margin: 130px 0/*150px*/;
 }
 .section-title{
     color: var(--Dark-01, #181818);
@@ -85,9 +92,114 @@ text-align: center;
 font-size: 35px;
 font-weight: 700;
 }
-.banner-description{
+.section-description{
     color: var(--Dark-03, #757575);
 text-align: center;
 font-size: 18px;
+margin-bottom: 0;
 }
+.about-info-container{
+    display: flex;
+    justify-content: space-between;
+}
+.about-info{
+   /* margin-right: 30px;*/
+    text-align: center;
+    margin-top: 0;
+}
+.about-title{
+    color: var(--Dark-03, #757575);
+font-size: 20px;
+margin-bottom: 5px;
+
+}
+.about-description{
+    color: var(--Dark-02, #474747);  
+font-size: 20px;
+margin-top: 0;
+}
+/*what i do section style*/
+#what{
+    padding:20px 115px 50px;
+    margin-bottom: 50px;
+}
+.skill-container{
+    display: flex;
+    gap: 24px;
+}
+.skill{
+    padding:30px;
+border-radius: 5px;
+background: #FFF;
+box-shadow: 0px 6px 50px 0px rgba(0, 0, 0, 0.06);
+}
+.skill-description{
+    color: var(--Dark-03, #757575);
+font-size: 16px;
+}
+/*resume section style*/
+.resume-container{
+    display: flex;
+    gap: 70px;
+}
+.resume-colum-title{
+    color: var(--Dark-02, #474747);
+font-size: 30px;
+}
+.resume-item-title{
+    color: var(--Dark-02, #474747);
+font-size: 25px;
+margin-bottom: 0;
+}
+.resume-item-institude{
+    color: var(--Dark-03, #757575);
+font-size: 20px;
+margin-top: 10px;
+margin-bottom: 0;
+}
+.resume-item-description{
+    color: var(--Dark-03, #757575);
+font-size: 16px;
+margin-top: 20px;
+}
+.resume-container hr{
+    margin: 30px 24px;
+}
+.download-cv{
+    text-align: center;
+    margin-top: 50px;
+}
+/*footer style*/
+footer{
+    background: #FFF8F3;
+    padding: 130px 100px 130px 70px;
+    margin-top: 100px;
+}
+.footer-colum-container{
+    display: flex; 
+    gap: 100px;
+}
+.footer-colum{
+    width: 50%;
+}
+.contact input,textarea{
+    display: block;
+    margin-bottom: 25px;
+    padding: 18px 35px;
+    color: var(--Dark-03, #757575);
+    border-radius: 5px;
+    font-size: 16px;
+    border: 0;
+    width: 100%;
+}
+.bt{
+    display: flex;
+    gap: 50px;
+}
+
+.social-links a{
+    margin-right: 25px;
+    margin-top: 20px;
+}
+
 
